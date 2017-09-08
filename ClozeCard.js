@@ -1,18 +1,10 @@
-var clozeCard = function(fullText, cloze) {
+var ClozeCard = function(fullText, cloze) {
     this.fullText = fullText;
     this.cloze = cloze;
-    this.partial= function() {
-        if (Process.argv[2] === cloze ) {
-        str.replace(cloze, "_______");
-        }
-    }
-    
-    // 1. type node to bring up REPL;
+    this.partial = fullText.replace(cloze, "_______");
+      
+  }
 
 
 
-
-
-
-module.exports = clozeCard;
-module.exports = partial;
+module.exports = ClozeCard;
